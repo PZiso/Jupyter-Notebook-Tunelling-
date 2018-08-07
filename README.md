@@ -32,4 +32,4 @@ At home computer, open a browser, go to `localhost:$port_number`. Jupyter will p
 
 If everything went well, you can now work with the remote Jupyter notebook, while using also all the libraries that are loaded already @ the private remote machine, at your place outside CERN.
 
-Happy coding :-) !
+Happy remote J-coding :-) !
