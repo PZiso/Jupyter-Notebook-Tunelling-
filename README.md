@@ -2,7 +2,7 @@
 
 ### Quick Description
 
-The following quick-guide follows a procedure which allows remote working with Jupyter notebooks, which are located on a <b>private remote host<b> inside the network of CERN. The procedure follows a process of ssh hops from the home computer (outside the network of CERN), to the lxplus via `username@lxplus.cern.ch` and to the private remote host. This method is mostly useful whenever there is no direct access via `ssh` from a network outside CERN, to the private node. 
+The following quick-guide follows a procedure which allows remote working with Jupyter notebooks, which are located on a **private remote host** inside the network of CERN. The procedure follows a process of ssh hops from the home computer (outside the network of CERN), to the lxplus via `username@lxplus.cern.ch` and to the private remote host. This method is mostly useful whenever there is no direct access via `ssh` from a network outside CERN, to the private node. 
 
 # Variables
 host_A : username@lxplus.cern.ch
@@ -19,7 +19,7 @@ jupyter notebook --no-browser --port=$port_number
 
 The --no-browser option is not mandatory but it will prevent Jupyter poping-up on the default browser. 
 
-From the personal computer @ home, type in a terminal for the ssh tunel : 
+From the personal computer @ home, type in a terminal for the ***ssh tunel*** : 
   
 ```shell
 ssh -L $port_number:localhost:$port_number $host_A ssh -L $port_number:localhost:$port_number -N $host_B
